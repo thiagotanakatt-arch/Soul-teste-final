@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soul Engenharia - Condomínio Residencial</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #D7D7D7 0%, #62707D 100%);
+            min-height: 100vh;
+        }
+
+        /* Página Inicial */
+        .home-page {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #D7D7D7 0%, #62707D 100%);
+            min-height: 100vh;
+        }
+
+        .logo-container {
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+
+        /* Logo */
+        .logo {
+            max-width: 70%;
+            height: auto;
+            filter: drop-shadow(0 10px 20px rgba(57, 73, 85, 0.3));
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .main-title {
+            font-size: 3.5rem;
+            color: #394955;
+            margin-bottom: 10px;
+            font-weight: 30;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            letter-spacing: 3px;
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            color: #62707D;
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .nav-btn {
+            background: linear-gradient(135deg, #394955 0%, #62707D 100%);
+            color: white;
+            border: none;
+            padding: 20px 40px;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(57, 73, 85, 0.3);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            z-index: 10;
+            position: relative;
+        }
+
+        .nav-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(57, 73, 85, 0.4);
+            background: linear-gradient(135deg, #62707D 0%, #394955 100%);
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .home-page {
+                padding: 15px;
+                justify-content: flex-start;
+                padding-top: 40px;
+            }
+
+            .logo-container {
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+
+            .logo {
+                width: 90%;
+                max-width: 350px;
+                height: auto;
+            }
+
+            .main-title {
+                font-size: 2.2rem;
+                margin-bottom: 15px;
+                line-height: 1.2;
+                letter-spacing: 2px;
+            }
+
+            .subtitle {
+                font-size: 1.1rem;
+                margin-bottom: 30px;
+            }
+            
+            .nav-buttons {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+                width: 100%;
+            }
+            
+            .nav-btn {
+                width: 90%;
+                max-width: 300px;
+                padding: 18px 30px;
+                font-size: 1rem;
+            }
+        }
+
+        /* Responsividade para telas muito pequenas */
+        @media (max-width: 480px) {
+            .main-title {
+                font-size: 1.8rem;
+                letter-spacing: 1px;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+
+            .nav-btn {
+                padding: 15px 25px;
+                font-size: 0.95rem;
+            }
+
+            .logo {
+                width: 85%;
+                max-width: 320px;
+            }
+
+            .home-page {
+                padding: 10px;
+                padding-top: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="home-page">
+        <div class="logo-container">
+            <img src="Logo.png" class="logo" alt="Logo da Empresa">
+        </div>
+        
+        <h1 class="main-title">CONDOMÍNIO RESIDENCIAL</h1>
+        <p class="subtitle">Laudo Técnico de Engenharia</p>
+        
+        <div class="nav-buttons">
+            <a href="https://drive.google.com/file/d/11YRUB2FaM7WsxGaAM7Jte_7Zzuirah64/view?usp=sharing" target="_blank" class="nav-btn">
+                📋 Laudo
+            </a>
+            <a href="https://github.com/thiagotanakatt-arch/Soul-teste-Celular/blob/main/index.html" target="_blank" class="nav-btn">
+                📐 Projetos
+            </a>
+        </div>
+    </div>
+</body>
+</html>
